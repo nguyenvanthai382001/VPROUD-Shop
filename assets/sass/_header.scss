@@ -1,0 +1,113 @@
+.header{
+    padding-top: 23px;
+    .header-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1146px;
+        & .logo {
+            img {
+                max-width: 167px;
+                height: 45px;
+                object-fit: cover;
+            }
+        }
+        & .search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #444444;
+            border-radius: 7px;
+            select {
+                border: none;
+                outline: 0;
+                padding-left: 13px;
+                padding-right: 7px;
+                color: #444444;
+                font-size: 14px;
+                font-weight:700;
+                option {
+                    color: #444444;
+                }
+            }
+            input {
+                border: none;
+                outline: 0;
+                margin-left: 19px;
+                padding-left: 19px;
+                font-weight: 400;
+                font-size: 14px;
+                padding-right: 65px;
+            }
+            input::placeholder{
+                padding-right: 300px;
+            }
+
+            .search-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #444444;
+                padding: 13px 21px 13px 16px;
+                color: #fff;
+                font-size: 14px;
+                text-decoration: none;
+                span {
+                    padding-left: 13px;
+                }
+            }
+        }
+        & .cart {
+            position: relative;
+            & img {
+                width: 29.63px;
+            }
+            & .number-cart {
+                background-color: red;
+                border-radius: 50%;
+                height: 17px;
+                width: 17px;
+                position: absolute;
+                font-size: 11px;
+                color: #fff;
+                text-align: center;
+                top: -16%;
+                right: -18%;
+                z-index: 10;
+            }
+        }
+        & .user {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .user-login {
+                margin-left: 10px;
+                font-size: 12px;
+                a {
+                    color: #656565;
+                }
+            }
+            .user-account {
+                margin-left: 10px;
+                a {
+                    color: #656565;
+                    font-size: 14px;
+                    font-weight: 700; 
+                    i {
+                        margin-left: 4px;
+                    } 
+                }
+            }
+        }
+        & .menu-icon {
+            height: 42px;
+            width: 42px;
+            color: $green-color;
+            background-color: #EBEBEB;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 23px;
+            line-height: 43px;
+        }
+    }
+}
